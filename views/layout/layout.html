@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ block 'title' }} title {{ /block }}</title>
+  <link rel="stylesheet" href="/public/css/bulma.min.css">
+  <link rel="stylesheet" href="/public//css//layout.css">
+  {{ block 'head' }} {{ /block }}
+</head>
+
+<body>
+  {{ include './header.html' }}
+  <div class="columns">
+    <div class="column is-10 is-offset-1 app-content">
+      {{ block 'content' }}
+      {{ /block }}
+    </div>
+  </div>
+  {{ include './footer.html' }}
+</body>
+<script src="/public/js//fonts.js"></script>
+{{ block 'script' }} {{ /block }}
+
+</html>

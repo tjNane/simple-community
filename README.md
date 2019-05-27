@@ -26,7 +26,7 @@ $ npm install express mongoose art-template express-art-template
 
 
 
-### :pizza:关于npm切换cnpm
+### :pizza:  关于npm切换cnpm
 
 - 方法1：全局安装cnpm
 

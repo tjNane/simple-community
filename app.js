@@ -4,9 +4,10 @@ const path = require('path');
 const app = express();
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
+app.engine('html', require('express-art-template'));
 
 app.get('/', (req, res) => {
-  res.send('hello');
+  res.render('index.html');
 })
 
 app.listen(8800, () => {
